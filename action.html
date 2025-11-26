@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ACTION</title>
+        <link rel="stylesheet" href="./css/action.css">
+        <link rel="icon" href="./img/action_favicon.ico" type="image/x-icon">
+    </head>
+
+    <body>
+
+        <header role="banner">
+            <div class="banner">
+                <div class="banner__message">150 nouveaux articles chaque semaine</div>
+                <div class="banner__message">Toujours 1 500 articles à moins de 1 euro</div>
+                <div class="banner__message">Les prix les plus bas</div>
+            </div>
+            <div class="search-container">
+                <!-- COMPOSANT SEARCH -->
+                <div class="search">
+                    <div class="search__logo">
+                        <img src="./img/action_logo.svg" alt="logo Action">
+                    </div>
+                    <div class="search__searchbar">
+                        <input type="text" aria-label="search" class="search__searchbar--input"
+                            placeholder="Que recherchez-vous ?">
+                    </div>
+                    <div class=" search__user">
+                        <img src="./img/avatar.png" alt="avatar" class="search__user--login" />
+                        <span class="search__user--connexion">Se connecter</span>
+                        <img src="./img/heart.svg" alt="favorite" class="search__user--favorite" />
+                    </div>
+                </div>
+            </div>
+            <!-- COMPOSANT NAVBAR -->
+            <!-- div.navbar-container>div.navbar>ul.navbar_items>(li.navbar__item>a.navbar__link)*7 -->
+            <div class="navbar-container">
+                <nav class="navbar" role="navigation" aria-label="Menu de navigation">
+                    <ul class="navbar__items">
+                        <li class="navbar__item"><a href="" class="navbar__link">Nouveautés</a></li>
+                        <li class="navbar__item"><a href="" class="navbar__link">Semaine d'Action</a></li>
+                        <li class="navbar__item">
+                            <a href="" class="navbar__link">Produit</a>
+                            <ul class="navbar__submenu">
+                                <li class="navbar__submenu-item"><a href="#" class="navbar__submenu-link">Sous-produit
+                                        1</a></li>
+                                <li class="navbar__submenu-item"><a href="#" class="navbar__submenu-item">Sous-produit
+                                        2</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="" class="navbar__link">Moments</a>
+                            <ul class="navbar__submenu">
+                                <li class="navbar__submenu-item"><a href="#" class="navbar__submenu-link">Moment 1</a>
+                                </li>
+                                <li class="navbar__submenu-item"><a href="#" class="navbar__submenu-link">Moment 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navbar__item"><a href="" class="navbar__link">Télécharger l'application</a></li>
+                        <li class="navbar__item"><a href="" class="navbar__link">Trouver les points de 🇻ente</a></li>
+                        <li class="navbar__item"><a href="" class="navbar__link">Service client</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- COMPOSANT NAVBAR -->
+        </header>
+
+        <main>
+            <!-- COMPOSANT HERO -->
+            <!-- div.hero__info>div.hero__title+div.hero__subtitle+div.hero__description+div.hero__button -->
+            <section class="hero-container">
+                <div class="hero">
+                    <div class="hero__info">
+                        <h1 class="hero__info-title">Catalogue de jouets
+                        </h1>
+                        <h2 class="hero__info-subtitle">pour une avalanche de cadeaux</h2>
+                        <p class="hero__info-description">Il est de retour ! Le catalogue de jouets Action va faire
+                            plaisir
+                            aux
+                            enfants comme aux parents à Noël ! Remplissez votre
+                            hotte avec les plus beaux cadeaux aux prix les plus bas.</p>
+                        <button class="hero__info-button">Voir tout</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION SEMAINE D'ACTION-->
+            <section class="arrivals" aria-labelledby="arrivals">
+                <div class="arrivals-container">
+                    <h3 class="arrivals__title" id="arrivals" tabindex="0">Semaine d'Action</h3>
+                    <h4 class="arrivalls__subtitle">09/10 au 15/10</h4>
+                    <span class="arrivals__all">Voir tout</span>
+                    <!-- CONTENEUR DES CARDS -->
+                    <div class="cards">
+                        <!-- COMPOSANT CARD -->
+                        <!-- Produit n°1 -->
+                        <div class="card">
+                            <span class="card__badge card__badge--arrivals">Semaine d'Action</span>
+                            <span class="card__favorite"><img src="./img/heart.svg" alt="favorite"></span>
+                            <div class="card__figure">
+                                <img src="./img/serpillere.avif" alt="serpillere" class="card__image">
+                                <figcaption class="card__figcaption">Serpillière et seau-essoreur</figcaption>
+                            </div>
+                            <p class="card__detail">Divers modèles</p>
+                            <span class="card__price card__price--arrivals">2.89</span>
+                        </div>
+                        <!-- Produit n°2 -->
+                        <div class="card">
+                            <span class="card__badge card__badge--arrivals">Semaine d'Action</span>
+                            <span class="card__favorite"><img src="./img/heart.svg" alt="favorite"></span>
+                            <div class="card__figure">
+                                <img src="./img/sacoche.avif" alt="sacoche" class="card__image">
+                                <figcaption class="card__figcaption">Sacoche à outils</figcaption>
+                            </div>
+                            <p class="card__detail">Divers modèles</p>
+                            <span class="card__price card__price--arrivals">1.59</span>
+                        </div>
+                        <!-- Produit n°3 -->
+                        <div class="card">
+                            <span class="card__badge card__badge--arrivals">Semaine d'Action</span>
+                            <span class="card__favorite">
+                                <img src="./img/heart.svg" alt="favorite">
+                            </span>
+                            <figure class="card__figure">
+                                <img src="./img/ampoules.avif" alt="ampoules" class="card__image">
+                                <figcaption class="card__figcaption">Ampoules LED LSC E27</figcaption>
+                            </figure>
+                            <p class="card__detail">Divers modèles</p>
+                            <span class="card__price card__price--arrivals">1.72</span>
+                        </div>
+                        <!-- Produit n°4 -->
+                        <div class="card">
+                            <span class="card__badge card__badge--arrivals">Semaine d'Action</span>
+                            <span class="card__favorite">
+                                <img src="./img/heart.svg" alt="favorite">
+                            </span>
+                            <div class="card__figure">
+                                <img src="./img/batonnets.avif" alt="batonnets" class="card__image">
+                                <figcaption class="card__figcaption">Bâtonnets à mâcher pour chien Pedigree
+                                    Dentastix
+                                </figcaption>
+                            </div>
+                            <p class="card__detail">Divers modèles</p>
+                            <span class="card__price card__price--arrivals">1.72</span>
+                        </div>
+                        <!-- Produit n°5 -->
+                        <div class="card">
+                            <span class="card__badge card__badge--arrivals">Semaine d'Action</span>
+                            <span class="card__favorite"><img src="./img/heart.svg" alt="favorite"></span>
+                            <div class="card__figure">
+                                <img src="./img/bougie_parfumee.png" alt="Diffuseur" class="card__image">
+                                <figcaption class="card__figcaption">Bougie parfumée Air Wick linge frais
+                                </figcaption>
+                            </div>
+                            <p class="card__detail">Ø 7 x 8 cm</p>
+                            <span class="card__price card__price--arrivals">1.58</span>
+                        </div>
+                        <!-- Produit n°6 -->
+                        <div class="card">
+                            <span class="card__badge card__badge--arrivals">Semaine d'Action</span>
+                            <span class="card__favorite"><img src="./img/heart.svg" alt="favorite">
+                            </span>
+                            <div class="card__figure">
+                                <img src="./img/coussin.png" alt="housse de coussin Maxime" class="card__image">
+                                <figcaption class="card__figcaption">Housse de coussin Maxime</figcaption>
+                            </div>
+                            <p class="card__detail">Divers modèles</p>
+                            <span class="card__price card__price--arrivals">1.72</span>
+                        </div>
+                    </div>
+                    <button class="arrivals__button">Voir tout</button>
+                </div>
+            </section>
+
+            <!-- SECTION NOUVEAUTES -->
+            <section class="new-products" aria-labelledby="new-products">
+                <div class="new-products-container">
+                    <h1 class="new-products__title" id="new-products" tabindex="0">Nouveau</h1>
+                    <h2 class="new-products__subtitle">150 nouveaux articles chaque semaine</h2>
+                    <span class="new-products__all">Voir tout</span>
+                    <!-- CONTENEUR DES CARDS -->
+                    <div class="cards">
+                        <!-- COMPOSANT CARD -->
+                        <!-- Produit n°1 -->
+                        <div class="card">
+                            <span class="card__badge">Nouveautés
+                            </span>
+                            <span class="card__favorite"><img src="./img/heart.svg" alt="favorite"></span>
+                            <div class="card__figure">
+                                <img src="./img/airpods.avif" alt="Boîtier pour AirPods Ideal of Sweden"
+                                    class="card__image">
+                                <figcaption class="card__figcaption">Boîtier pour AirPods Ideal of Sweden
+                                </figcaption>
+                            </div>
+                            <p class="card__detail">Divers modèles</p>
+                            <span class="card__price">2.89</span>
+                        </div>
+                        <!-- Produit n°2 -->
+                        <div class="card">
+                            <span class="card__badge">Nouveautés
+                            </span>
+                            <div class="card__favorite"><img src="./img/heart.svg" alt="favorite"></div>
+                            <div class="card__figure">
+                                <img src="./img/chupa-chups.avif" alt="bougie" class="card__image">
+                                <figcaption class="card__figcaption">Bougie parfumée Chupa Chups</figcaption>
+                            </div>
+                            <p class="card__detail">Divers modèles</p>
+                            <span class="card__price">5.95</span>
+                        </div>
+                        <!-- Produit n°3 -->
+                        <div class="card">
+                            <span class="card__badge">Nouveautés
+                            </span>
+                            <div class="card__favorite"><img src="./img/heart.svg" alt="favorite"></div>
+                            <div class="card__figure">
+                                <img src="./img/bougie.avif" alt="Bougies chauffe-plats parfumées Chupa Chups"
+                                    class="card__image">
+                                <figcaption class="card__figcaption">Bougies chauffe-plats parfumées Chupa Chups
+                                </figcaption>
+                            </div>
+                            <p class="card__detail">Divers modèles</p>
+                            <span class="card__price">1.63</span>
+                        </div>
+                        <!-- Produit n°4 -->
+                        <div class="card">
+                            <span class="card__badge">Nouveautés
+                            </span>
+                            <div class="card__favorite"><img src="./img/heart.svg" alt="favorite"></div>
+                            <div class="card__figure">
+                                <img src="./img/diffuseur.avif" alt="diffuseur" class="card__image">
+                                <figcaption class="card__figcaption">Diffuseur de parfum</figcaption>
+                            </div>
+                            <p class="card__detail">Divers modèles</p>
+                            <span class="card__price">1.49</span>
+                        </div>
+                        <!-- Produit n°5 -->
+                        <div class="card">
+                            <span class="card__badge">Nouveautés
+                            </span>
+                            <div class="card__favorite"><img src="./img/heart.svg" alt="favorite"></div>
+                            <div class="card__figure">
+                                <img src="./img/etoiles.png" alt="Mini-étoiles en chocolat Christmas Moments"
+                                    class="card__image">
+                                <figcaption class="card__figcaption">Mini-étoiles en chocolat Christmas Moments
+                                </figcaption>
+                            </div>
+                            <p class="card__detail">Divers modèles</p>
+                            <span class="card__price">1.99</span>
+                        </div>
+                        <!-- Produit n°6 -->
+                        <div class="card">
+                            <span class="card__badge">Nouveautés
+                            </span>
+                            <div class="card__favorite"><img src="./img/heart.svg" alt="favorite"></div>
+                            <div class="card__figure">
+                                <img src="./img/nettoyant.png" alt="Nettoyant universel Fabulosa" class="card__image">
+                                <figcaption class="card__figcaption">Nettoyant universel Fabulosa</figcaption>
+                            </div>
+                            <p class="card__detail">Divers modèles</p>
+                            <span class="card__price">1.72</span>
+                        </div>
+                    </div>
+                    <button class="new-products__button">Voir tout</button>
+                </div>
+            </section>
+
+
+        </main>
+
+        <footer role="contentinfo">
+            <div class="foot">
+                <div class="foot__newletters">
+                    <h1 class="foot__newletters-title">Soyez le premier informé</h1>
+                    <p class="foot__newletters-description">Inscrivez-vous à notre newsletter et laissez-vous surprendre
+                        par nos derniers arrivages et promos !</p>
+                    <input type="text" class="foot__newletters-input" aria-label="email"
+                        placeholder="Votre adresse email">
+                    <button class="foot__newletters-button">S'abonner à la newletters</button>
+                    <div class="foot__newletters-details">
+                        Plus de 700 000 personnes vous ont précédé
+                    </div>
+                </div>
+                <div class="foot__service">
+                    <h1 class="foot__service-title">Service clients</h1>
+                    <a href="" class="foot__service-link">Service clients</a>
+                    <a href="" class="foot__service-link">Questions fréquentes</a>
+                    <a href="" class="foot__service-link">Points de vente</a>
+                    <a href="" class="foot__service-link">Informations de produits importantes</a>
+                    <a href="" class="foot__service-link">Qualité et Cractéristiques Environnementales</a>
+                    <a href="" class="foot__service-link">Consulter le solde</a>
+                </div>
+                <div class="foot__about">
+                    <h1 class="foot__about-title">A propos d'Action</h1>
+                    <a class="foot__about-link" href="">L'application Action</a>
+                    <a class="foot__about-link" href="">A propos de nous</a>
+                    <a class="foot__about-link" href="">Travailler chez Action</a>
+                    <a class="foot__about-link" href="">Salle de rédaction</a>
+                    <a class="foot__about-link" href="">Durabilité</a>
+                    <a class="foot__about-link" href="">Expansion</a>
+                    <a class="foot__about-link" href="">Marques propres</a>
+                    <a class="foot__about-link" href="">Nos lauréats</a>
+                    <a class="foot__about-link" href="">Compagny website</a>
+                    <a class="foot__about-link" href="">Mentions Légales</a>
+                    <a class="foot__about-link" href="">Cookiestatement</a>
+                    <a class="foot__about-link" href="">Déclaration de confidentialité</a>
+                    <a class="foot__about-link" href="">Déclaration de conformité</a>
+                    <a class="foot__about-link" href="">Numéro d'identifiants uniques</a>
+                    <a class="foot__about-link" href="">Blogs</a>
+                </div>
+                <div class="foot__socials">
+                    <span class="foot__socials-icon">
+                        <img src="./img/instagram.png" alt="instagram" class="foot__socials--instagram">
+                    </span>
+                    <span class="foot__socials-icon">
+                        <img src="./img/facebook.png" alt="facebook" class="foot__socials--facebook">
+                    </span>
+                    <span class="foot__socials-icon">
+                        <img src="./img/x.png" alt="x" class="foot__socials--twitter">
+                    </span>
+                    <span class="foot__socials-icon">
+                        <img src="./img/youtube.png" alt="youtube" class="foot__socials--youtube">
+                    </span>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>
